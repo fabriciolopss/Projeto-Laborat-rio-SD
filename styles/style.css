@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+@font-face {
+    font-family: '7seg';
+    src: url('../font/Seven.ttf') format('truetype'); /* Substitua o caminho pela localização do arquivo da fonte */
+    /* Outras propriedades opcionais, como font-weight e font-style, podem ser especificadas aqui */
+  }
+
+body{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width:100%;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    overflow-x: hidden;
+    overflow-y:hidden;
+}
+
+#container-upper{
+    position:relative;
+    width:100%;
+    height: 50%;
+    background-color:rosybrown;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container-lower{
+    width:100%;
+    height: 50%;
+    background-color:aliceblue;
+}
+
+#coffee-machine{
+    width:500px;
+    height:400px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    border: 2px solid black;
+}
+
+#container-coffee{
+    position:relative;
+    width:600px;
+    height:450px;
+    border: 2px solid black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#upper-part{
+    position:relative;
+    width:400px;
+    height:120px;
+    background-color:#ca2f3b;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:25px;
+    z-index:3;
+}
+
+#visor{
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    right:60px;
+    width:50px;
+    height:40px;
+    color:white;
+    background-color:black;
+    border: 3px solid;
+    font-family: "7seg", sans-serif;
+    font-size:30px;
+}
+
+#intern-part-upper{
+    width:350px;
+    height: 120px;
+    background-color: #FA4A55;
+    border-radius:20px;
+}
+
+
+#middle-part{
+    width:350px;
+    height:200px;
+    background:#CC1B38;
+    display:flex;
+    justify-content:center;
+    align-items:end;
+    position:relative;
+
+}
+
+#intern-part-middle{
+    background-color:#D92842;
+    width: 260px;
+    height:180px;
+}
+
+#bottom-part{
+    position:relative;
+    width:400px;
+    height:50px;
+    background:#FA4A55;
+    border-radius:30px;
+}
+
+#coffee-output{
+    width: 200px;
+    height: 100px;
+    background-color: #F8F9FB;
+    border-radius: 50%;
+    position:absolute;
+    top:-50px;
+    overflow:hidden;    
+}
+
+#coffee-output-shadow{
+    z-index:10;
+    margin-top:40px;
+    width:100%;
+    height:30px;
+    background:#B5D4CC
+}
+
+.coffee-output-liquid{
+    position:absolute;
+    z-index:0;
+    background-color: #F8F9FB;
+    width:10px;
+    height:60px;
+    border-radius:20px;
+    top:30px;
+}
+
+#left{
+    left:140px;
+}
+
+#right{
+    left:190px;
+}
+
+.white{
+    position:absolute;
+    height:100%;
+    background-color: #FD717E;
+}
+
+#first{
+    left:100px;
+    width:40px;
+}
+
+#second{
+    left:160px;
+    width:20px;
+}
+
+#third{
+    left:195px;
+    width:15px;
+}
+
+#buttons-upper{
+    position:absolute;
+    display:flex;
+    left:40px;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
+
+.button-upper{
+    width:25px;
+    height: 7px;
+    background-color: #7B3C82;
+    border-radius:30px;
+    margin-bottom:5px;
+    border:8px solid #35243d;
+}
+
+#cup{
+    position:absolute;
+    bottom:90px;
+    z-index:100;
+
+}
+
+#mug {
+    width: 8em;
+    height: 6em;
+    position: relative;
+    background-color: #ddd;
+    overflow: hidden;
+    border-radius: .05em .05em 3em 3em;
+    display:flex;
+    justify-content:center;
+    align-items:end;
+    z-index:110;
+  }
+
+#handle {
+    position: absolute;
+    height: 40px;
+    width: 50px;
+    border-radius: 100%;
+    border-top: 10px solid #ddd;
+    border-left: 10px solid #ddd;
+    border-bottom: 10px solid #ddd;
+    transform:rotateY(180deg);
+    right: -34px;
+    top: 7px;
+  }
+
+#liquid{
+    position:absolute;
+    z-index:100;
+    background-color: #401E15;
+    width:7em;
+    height:0px;
+    border-radius: .05em .05em 3em 3em;
+    margin-bottom:5px;
+    transition:1s;
+}
+
+#liquid.grande{
+    height:80px;
+}
+
+#liquid.medio{
+    height:60px;
+}
+
+#liquid.pequeno{
+    height:40px;
+}
+
+.divisions{
+    width:20%;
+    height: 100%;
+}
+
+#dinheiro-module{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(128, 164, 196);
+}
+
+.coin{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background-color: #FCBC65;
+    border: 5px solid #be904f;
+    transition:1s;
+    cursor:pointer;
+}
+
+.nota{
+    margin:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100px;
+    height:50px;
+    transition: 1s;
+    cursor:pointer;
+
+}
+
+#nota2{
+    background-color:#C3D2E7;
+    border: 5px solid #1F5458
+}
+
+#nota5{
+    background-color:#B6ADC8;
+    border: 5px solid #6C526F
+}
+
+#nota10{
+    background-color:#F2CBBC;
+    border: 5px solid #633331
+}
+
+#nota20{
+    background-color:#EAD387;
+    border: 5px solid #C24E37
+}
+
+#nota50{
+    background-color:#CCBD9C;
+    border: 5px solid #715C49
+}
+
+.nota:hover{
+    transform:scale(1.1);
+}
+
+.coin:hover{
+    transform:scale(1.1);
+}
