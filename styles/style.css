@@ -35,6 +35,9 @@ body{
 }
 
 #container-lower{
+    display:flex;
+    justify-content:center;
+    align-items:center;
     width:100%;
     height: 50%;
     background-color:aliceblue;
@@ -253,11 +256,14 @@ body{
 }
 
 .divisions{
+    margin:0px;
     width:20%;
     height: 100%;
+    border-left:#35243d 1px solid;
 }
 
 #dinheiro-module{
+    width: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -321,4 +327,88 @@ body{
 
 .coin:hover{
     transform:scale(1.1);
+}
+
+#flavour-module{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.Sabor {
+    width:80px;
+    text-align:center;
+	box-shadow: 4px 4px 0px 0px #a04855;
+	background-color:transparent;
+	border-radius:28px;
+	border:1px solid black;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+    background-color:#fa7084;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #a04855;
+    transition: 1s ease-in-out;
+}
+.Sabor:hover {
+	background-color:transparent;
+    color:black;
+}
+.Sabor:active {
+    position:relative;
+    top:1px;
+}
+
+#last-flavour{
+    margin-bottom:20px;
+}
+
+#tipo-selecionado{
+    margin-bottom:0px;
+    margin-top:20px;
+}
+
+#select-size{
+    text-align: center;
+}
+
+#size-module{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.radio-button{
+    width:20px;
+    height: 20px;
+    border: black 1px solid;
+    border-radius: 50%;
+    transition:0.5s;
+    margin-right: 10px;
+    margin-left:30px;
+    cursor:pointer;
+}
+
+.division-size{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width:100%;
+
+}
+
+.radio-button:hover{
+    background-color:#ff97a1;
+}
+
+.radio-button.active{
+    background-color:#FA4A55;
 }

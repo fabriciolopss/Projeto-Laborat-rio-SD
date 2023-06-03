@@ -53,15 +53,38 @@
         <div id = "container-lower">
             <div class = "divisions" id = "dinheiro-module">
                 <p id = "dinheiro-total"><span id = "dinheiro-span">0</span> REAIS</p>
-                <div id = "nota1" class = "coin">1$</div>
-                <div id = "nota2" class = "nota">2$</div>
-                <div id = "nota5" class = "nota">5$</div>
-                <div id = "nota10" class = "nota">10$</div>
-                <div id = "nota20" class = "nota">20$</div>
-                <div id = "nota50" class = "nota">50$</div>
+                <div id = "nota1" class = "coin dinheiro">1$</div>
+                <div id = "nota2" class = "nota dinheiro">2$</div>
+                <div id = "nota5" class = "nota dinheiro">5$</div>
+                <div id = "nota10" class = "nota dinheiro">10$</div>
+                <div id = "nota20" class = "nota dinheiro">20$</div>
+                <div id = "nota50" class = "nota dinheiro">50$</div>
             </div>
-            <div class = "divisions"></div>
-            <div class = "divisions"></div>
+            <div class = "divisions" id = "flavour-module">
+                <p id = "tipo-selecionado">Bebida:</p>
+                <div class = "Sabor">Expresso</div> <!-- Café muito concentrado = mais escuro as opções ja estão do mais escuro para o mais claro-->
+                <div class = "Sabor">Capuccino</div>
+                <div class = "Sabor">Machiatto</div>
+                <div class = "Sabor" id = "last-flavour">Latte</div> 
+
+            </div>
+            <div class = "divisions" id = "size-module">
+                <div id = "agroup-buttons">
+                <p id = "select-size">Selecione o tamanho:</p>
+                <div class = "division-size"> 
+                    <div class = "radio-button"></div>
+                    <p>Pequeno</p>
+                </div>
+                <div class = "division-size"> 
+                    <div class = "radio-button"></div>
+                    <p>Médio</p>
+                </div>
+                <div class = "division-size"> 
+                    <div class = "radio-button"></div>
+                    <p>Grande</p>
+                </div>
+                </div>
+            </div>
             <div class = "divisions"></div>
             <div class = "divisions"></div>
         </div>
