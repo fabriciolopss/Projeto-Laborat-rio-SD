@@ -121,7 +121,7 @@ function generateNotas(resultado){
     var notaDiv = dinheiroTypes[i];
     const textoDiv = document.createElement('span');
     for (let y = 0; y <quantidade; y++){
-      textoDiv.textContent = quantidade + " notas de:";
+      textoDiv.textContent = quantidade + " nota(s) de:";
       resultTable.appendChild(textoDiv);
       resultTable.appendChild(notaDiv);
       console.log(notaDiv);
@@ -192,6 +192,8 @@ const textBebidaType = document.getElementById('tipoCafe');
 const textSize = document.getElementById('tamanhoCafe');
 const textSugar = document.getElementById('presencaAcucar');
 const textTemperature = document.getElementById('temperaturaCafe');
+const valorPagoTable = document.getElementById('valorPago');
+const valorBebidaTable = document.getElementById('valorBebida');
 
 const prepareButton = document.getElementById('prepareCoffee')
 
@@ -213,6 +215,9 @@ prepareButton.addEventListener('click', function(){
     textSize.innerHTML = sizeChoosed;
     textSugar.innerHTML = sugarPresence;
     textTemperature.innerHTML = tempChoosed;
+    valorPagoTable.innerHTML = dinheiroAtual
+    valorBebidaTable.innerHTML = precoCafe;
     resultTable.style.display = 'flex';
+    resultTable.classList.add('animate');
   }
 });
