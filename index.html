@@ -6,9 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/checkbox.css">
+    <link rel="stylesheet" href="styles/button.css">
 </head>
 <body>
     <div class = "container">
+        <div id = "result-table">
+            <h2>TIPO DA BEBIDA: <span id = "tipoCafe"></span></h2>
+            <h2>TAMANHO DA BEBIDA: <span id = "tamanhoCafe"></span></h2>
+            <h2><span id = "presencaAcucar"></span></h2>
+            <h2><span id = "temperaturaCafe"></span></h2>
+            <h2>TROCO RECEBIDO: <span id = "trocoRecebido"></span></h2>
+        </div>
         <div id = "container-upper">
             <div id = "container-coffee">
                 <div id = "cup">
@@ -39,6 +48,10 @@
                         <div class = "coffee-output-liquid" id = "left"></div>
                         <div class = "coffee-output-liquid" id = "right"></div>
                         <div id = "intern-part-middle"></div>
+                        <div id = "valor-coffee">
+                            <div id = 'shadow-value'></div>
+                            <p><span id = "shadow-text">R$</span>:<span id = "value-led">0</span>.00</p>
+                        </div>
                     </div>
 
 
@@ -85,8 +98,31 @@
                 </div>
                 </div>
             </div>
-            <div class = "divisions"></div>
-            <div class = "divisions"></div>
+            <div class = "divisions" id = "sugar-temperature-module">
+                <div class = "sugar-temperature" id = "sugar">
+                    <p>Selecionar açucar:</p>
+                    <div id = "checkbox">
+                        <div class="wrap" id = "sugarButton">
+                            <input type="checkbox" />
+                            <div class="outer">
+                            </div>
+                            <div class="inner">
+                            </div>
+                            </div>
+                    </div>
+                </div>
+                <div class = "sugar-temperature" id = "temperature">
+                    <p id="texto">Frio</p>
+                    <div class="barra">
+                        <div id="circulo" class="circulo"></div>
+                      </div>
+
+                </div>
+            </div>
+            <div class = "divisions" id = "result-module">
+                <div id = "Result">Valor da bebida: <span id = "valor-resultante">0</span> reais</div>
+                <a class = "button" id = "prepareCoffee">Preparar</a>
+            </div>
         </div>
     </div>
     <script src = "scripts/main.js"></script>
